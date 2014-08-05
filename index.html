@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Anthony Sallows, Web Developer">
+	<title>Anthony Sallows</title>
+	 
+	<link href="css/bootstrap.css" rel="stylesheet">
+	 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ 
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+ 
+	<link rel="shortcut icon" href="images/favicon.png">
+	<script src="js/pace.js"></script>
+ 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="preloader"></div>
+	
+    <! -- ******************** MASTHEAD SECTION ******************** -->	
+	<main id="top" class="masthead" role="main">
+		<div class="container">
+			<div class="logo"> <a href="index.html#"><img src="images/name4.png" alt="logo"></a>
+				<h1><strong>Web Developer, </strong><br>Bicycle Enthusiast, <br>Code Monkey.</h1><br>
+				<h3>Lover of life, delicious food,<br>
+				and the outdoors.</h3>
+ 			</div>
+ 
+				<a href="index.html#explore" class="scrollto">
+				<p>SCROLL DOWN TO EXPLORE</p>
+				<p class="scrollto--arrow"><img src="images/scroll_down.png" alt="scroll down arrow"></p>
+				</a>
+		</div><! --/container -->
+	</main><! --/main -->
+
+	 <! -- ******************** FEATURES SECTION ******************** -->	
+	<div class="container" id="explore">
+ 
+		<div class="section-title">
+			<h2>Github, LinkedIn, and Twitter, oh my!</h2>
+		</div>
+		
+		<section class="row features">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail"> 
+					<a href="http://www.github.com/antmachine">
+					<i class="fa fa-github fa-5x"></i></a>
+					<div class="caption">
+						<p>Project ideas, and trying new things...</p>
+					</div>
+				</div><! --/thumbnail -->
+			</div><! --/col-sm-6-->
+ 
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail"> 
+					<a href="https://www.linkedin.com/pub/anthony-sallows/42/b70/162">
+					<i class="fa fa-linkedin fa-5x"></i></a>
+					<div class="caption">
+						<p>Work history, education, experience.</p>
+					</div>
+				</div><! --/thumbnail -->
+			</div><! --/col-sm-6-->
+ 
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<a href="https://www.twitter.com/antmachine">
+					<i class="fa fa-twitter fa-5x"></i></a>
+					<div class="caption">
+						<p>Random thoughts and musings.</p>
+					</div>
+				</div><! --/thumbnail -->
+			</div><! --/col-sm-6-->
+			
+			<div class="row">
+				<div class="col-md-12 breath text-center">
+					<form method="post" action="mailto:anthonysallows@gmail.com">
+						<button type="submit" class="btn btn-success btn-lg">Email me</button>
+					</form>
+					<span id="result" class="alertMsg"></span>
+				</div>
+			</div>
+ 
+<!-- footer area START -->
+		<div class="container">
+			<section class="row breath">
+				<div class="col-md-12 footerlinks">
+					<p>&copy; 2014 Anthony Sallows. All Rights Reserved.</p>
+					<p>Theme by BlackTie.co</p>
+				</div>
+			</section><! --/section -->
+		</div><! --/container -->
+<!-- footer area END -->
+
+
+ 
+ 
+ 
+ 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/nicescroll.js"></script>
+ 
+ 
+<script>
+
+
+ $(function() {
+    $('.scrollto, .gototop').bind('click',function(event){
+		 var $anchor = $(this);
+		 $('html, body').stop().animate({
+         scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500,'easeInOutExpo');
+     event.preventDefault();
+      });
+  });
+        
+
+</script>
+ 
+</body>
+</html>
